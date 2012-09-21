@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>WebApp | Manage Platform</title>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+</head>
+<body><div id="load">网站读取中</div>
+<div id="header" style="display:none">
+	<img src="image/logo.png">
+</div>
+<div id="operatingBar">处理请求中</div>
+<div id="infoBar"></div>
+<div id="middleSection"></div>
+<div id="centre" style="display:none">
+<div id="main" style="display:none">
+	<div id="left">
+		<div id="plug">
+			<ul>
+				<!--插件导航栏-->
+			</ul>
+		</div>
+	</div>
+	<div id="right">
+		<div id="plugShow">
+			<!--插件显示区域-->
+		</div>
+	</div>
+	<div id="right_bottom">
+		<div id="plugSideShow">
+			<!--插件显示区域-->
+		</div>
+	</div>
+</div>
+
+
+<div id="centre_div" style="display:none">
+<div id="welcome"><span class="f20 black ml3 mb10 block">欢迎回来</span></div>
+<form id="login_form">
+<span class="mb20 block"></span>
+<span class="f20 grey ml3 mb10 block">进入系统</span>
+<br>
+<span class="f10 grey ml3">用户帐号</span>
+<br>
+<input type="text" class="login_input mb10" id="account" style="width:265px"/>
+<br>
+<span class="f10 grey ml3">密码口令</span>
+<br>
+<input type="password" class="login_input mb10" id="password"  style="width:265px"/>
+<br>
+<input type="submit" class="mt10" id="login_submit" value="登录"/>
+</form>
+</div>
+</div>
+<script src="plug/jquery.js"></script>
+<script src="plug/jquery.cookies.2.2.0.min.js"></script>
+<script src="plug/jquery.tmpl.min.js"></script>
+<script src="script/mod.ms.login.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ms.mod.login();});
+</script>
+</body>
+</html>

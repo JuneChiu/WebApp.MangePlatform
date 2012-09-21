@@ -1,0 +1,27 @@
+<script id="clientTemple_frame" type="text/x-jquery-tmpl">
+	<table class="client">
+		<thead>
+			<tr>
+				<th style="width:10%">代码</th>
+    			<th style="width:35%">单位</th>
+    			<th style="width:10%">联系人</th>
+    			<th style="width:10%">联系方式</th>
+    			<th style="width:25%">地址</th>
+    			<th style="width:10%">负责人</th>
+    		</tr>
+		</thead>
+		<tbody>
+		</tbody>
+ 	</table>
+</script>
+
+<script id="clientTemple_content" type="text/x-jquery-tmpl">
+			<tr id=${clientId}>
+				<td>${clientCode}</td>
+    			<td title="${clientCompany}">${clientCompany}</td>
+    			<td title="${clientPerson}">${clientPerson}</td>
+    			<td title="${clientContact}">${clientContact}</td>
+    			<td title="${clientAddress}">${clientAddress}</td>
+    			<td>${clientCharge}</td>
+    		</tr>
+</script>
